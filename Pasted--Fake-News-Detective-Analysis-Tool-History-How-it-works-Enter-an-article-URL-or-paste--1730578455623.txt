@@ -1,0 +1,61 @@
+🔍 Fake News Detective
+
+Analysis Tool
+
+
+History
+
+How it works
+Enter an article URL or paste the text directly
+Our AI will analyze the content
+Get detailed insights about credibility
+Choose input method:
+
+
+Enter URL
+
+
+Paste Text
+
+Enter article URL:
+
+https://www.cbc.ca/news/politics/abortion-services-charitable-status-1.7366854
+Article fetched successfully!
+
+View extracted text
+
+New legislation would make 'crisis pregnancy centres' disclose whether they provide abortion support
+Crisis pregnancy centres that fail to follow proposed rules would risk losing their charitable status
+The federal government has introduced legislation that would require charities providing reproductive health services to state clearly whether they offer abortion or abortion referrals.
+Organizations that fail to clearly tell their clients whether they provide these services could risk losing their charitable status.
+Marci Ien, the minister for women and gender equality, said Tuesday the legislation is meant to combat the spread of "misinformation" by some charities that operate crisis pregnancy centres.
+"People are walking in the doors of pregnancy crisis centres expecting to receive information on all options that are available to them," Ien told a press conference.
+"They are met with organizations that are imposing their anti-choice convictions on them."
+The new rules would require charities that provide pregnancy counselling to tell clients if they don't provide abortion services, referrals or information about abortion services, birth control or information regarding birth control.
+Debbie Owusu-Akyeeah, a spokesperson for the pro-choice advocacy group Action Canada, praised the new legislation. She said many anti-abortion charities do provide free access to things like diapers and pregnancy tests but then direct individuals away from accessing abortion care.
+"They are presented in a way that actually kind of looks like they're operating in good faith," she said.
+"The biggest issue with these centres is that they often use very deceptive tactics with the objective to delay abortion access for the people who are looking to get care."
+The Society of Obstetricians and Gynaecologists of Canada also voiced support for the legislation.
+"As physicians, we have a duty to support women who choose to terminate a pregnancy and to refer them to appropriate abortion services. We expect the same transparency from organizations offering pregnancy counselling," Dr. Lynn Murphy-Kaulbeck, the organization's president, said in a media statement.
+Jakki Jeffs, executive director of the Alliance for Life Ontario, argued that most pregnancy centres don't hide their stance on abortion. Her organization represents 50 anti-abortion groups across the province; she said some of them have charitable status.
+"I don't think any of us have a problem with being clear as to who we are. I think what's happening is the government and those that don't agree with us have a problem with us being here," Jeffs said.
+"We have people call up because they think maybe we would provide abortion, but we don't pretend we do."
+Jeffs said she thinks it's possible some of her members might lose charitable status if the legislation is passed. She said her organization is still assessing the rules.
+Registered charities are granted certain benefits under the tax system, including the ability to issue tax-exempt donation receipts.
+During the 2021 election campaign, the Liberals promised to strip charitable status from anti-abortion organizations that provide what they called "dishonest counselling."
+Ien said Tuesday that the proposed legislation is about "telling the truth." She talked about her own miscarriage due to an unviable pregnancy.
+"If I had gone into one of these centres and someone said to me, 'Listen, you still have a hope of parenting. You need to just stand pat, not get the medical care that's recommended' ... I can't imagine that," she told reporters.
+"This isn't about revoking people's charitable status if they're telling the truth."
+Owusu-Akyeeah said Tuesday's announcement is "an important first step," but it needs to be paired with access to health information.
+Liberals, NDP attempt to wedge Conservatives
+The Liberals have been increasingly vocal on abortion issues in the past few weeks as they attempt to wedge the Conservatives — who have several anti-abortion members of Parliament in their caucus — on the issue at the centre of the U.S. presidential election campaign.
+Conservative Leader Pierre Poilievre has said that if he's elected prime minister, his government will not support any legislation to regulate abortion.
+Poilievre was faced with questions about his party's position on abortion in June, when Conservative MP Arnold Viersen said on a podcast that he wants protections for what he calls the "pre-born."
+NDP Leader Jagmeet Singh announced last week that he will use his next opposition day to debate and vote on a motion calling for action to improve abortion access and "push back the creep of anti-choice bills, petitions and threats in Canada."
+This is expected to be the NDP's only opposition day in this sitting of the House of Commons.
+It is not clear when the Liberals' legislation or the NDP motion will be debated or voted on, as the House is currently deadlocked in a debate over access to documents.
+With files from Marina von Stackelberg and The Canadian Press
+
+Analysis error: (psycopg2.errors.NotNullViolation) null value in column "id" of relation "article_history" violates not-null constraint DETAIL: Failing row contains (null, New legislation would make 'crisis pregnancy centres' disclose w..., New legislation would make 'crisis pregnancy centres' disclose w..., https://www.cbc.ca/news/politics/abortion-services-charitable-st..., t, 50.39835845060841, 50, 2024-11-02 19:25:09.002801).
+
+[SQL: INSERT INTO article_history (title, content, url, is_fake, confidence_score, source_credibility_score, analysis_date) VALUES (%(title)s, %(content)s, %(url)s, %(is_fake)s, %(confidence_score)s, %(source_credibility_score)s, %(analysis_date)s) RETURNING article_history.id] [parameters: {'title': "New legislation would make 'crisis pregnancy centres' disclose whether they provide abortion support", 'content': 'New legislation would make 'crisis pregnancy centres' disclose whether they provide abortion support\nCrisis pregnancy centres that fail to follow ... (711 characters truncated) ... n told a press conference.\n"They are met with organizations that are imposing their anti-choice convictions on them."\nThe new rules would require c', 'url': 'https://www.cbc.ca/news/politics/abortion-services-charitable-status-1.7366854', 'is_fake': True, 'confidence_score': 50.39835845060841, 'source_credibility_score': 50.0, 'analysis_date': datetime.datetime(2024, 11, 2, 19, 25, 9, 2801)}] (Background on this error at: https://sqlalche.me/e/20/gkpj)
